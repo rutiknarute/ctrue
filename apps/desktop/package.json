@@ -78,7 +78,7 @@
     "publish": [
       {
         "provider": "generic",
-        "url": "https://github.com/monishpatalay/ctrue/releases/latest/download"
+        "url": "https://github.com/rutiknarute/ctrue/releases/latest/download"
       }
     ]
   }

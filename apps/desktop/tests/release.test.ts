@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 // A release that updates itself must keep one signing identity and point at real services: a build that silently
 // falls back to an ad hoc signature or to localhost breaks updates and macOS permissions for every installed copy.
 const desktop = fileURLToPath(new URL('..', import.meta.url));
-const signed = { CTRUE_SIGNED_RELEASE: 'true', CTRUE_WEBSITE_URL: 'https://ctrue.monishpatalay.dev', CTRUE_UPDATE_FEED_URL: 'https://github.com/monishpatalay/ctrue/releases/latest/download/' };
+const signed = { CTRUE_SIGNED_RELEASE: 'true', CTRUE_WEBSITE_URL: 'https://your-domain.com', CTRUE_UPDATE_FEED_URL: 'https://github.com/rutiknarute/ctrue/releases/latest/download/' };
 
 test('a signed release will not build without https service addresses', () => {
   for (const api of ['', 'http://localhost:4318']) {

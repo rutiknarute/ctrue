@@ -19,7 +19,7 @@ services:
         - render.yaml
     numInstances: 1          # sign-in handoff codes live in memory; more than one copy would break them
     domains:
-      - api.ctrue.monishpatalay.dev
+      - api.your-domain.com
     envVars:
       - key: NODE_VERSION
         value: "24"
@@ -32,9 +32,9 @@ services:
       - key: TRUST_PROXY
         value: "1"
       - key: ALLOWED_ORIGINS
-        value: https://ctrue.monishpatalay.dev
+        value: https://your-domain.com
       - key: WEB_URL
-        value: https://ctrue.monishpatalay.dev
+        value: https://your-domain.com
       - key: NEON_AUTH_BASE_URL
         value: https://ep-calm-moon-b5v7zn9p.neonauth.c-7.us-east-2.aws.neon.tech/neondb/auth
       - key: OPENAI_MODEL

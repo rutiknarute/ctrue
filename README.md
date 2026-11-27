@@ -2,9 +2,7 @@
 
 A free, open-source assistant for macOS and Windows for practice and for calls where help is welcome. Press a shortcut and a private, see-through pop-up transcribes what is being said, reads what is on your screen, and drafts an answer using your own OpenAI API key.
 
-**Website:** [ctrue.monishpatalay.dev](https://ctrue.monishpatalay.dev)
-
-**Download:** [ctrue.monishpatalay.dev/downloads](https://ctrue.monishpatalay.dev/downloads) · macOS on Apple Silicon (M1 and later) · Windows 10 and 11 (64-bit) · [all releases](https://github.com/monishpatalay/ctrue/releases)
+**Download:** [latest release](https://github.com/rutiknarute/ctrue/releases) · macOS on Apple Silicon (M1 and later) · Windows 10 and 11 (64-bit)
 
 ## Get started
 

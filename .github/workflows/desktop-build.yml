@@ -23,11 +23,11 @@ jobs:
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
           CTRUE_SIGNED_RELEASE: 'true'
-          CTRUE_API_URL: https://api.ctrue.monishpatalay.dev
-          VITE_API_URL: https://api.ctrue.monishpatalay.dev
-          CTRUE_WEBSITE_URL: https://ctrue.monishpatalay.dev
-          VITE_WEBSITE_URL: https://ctrue.monishpatalay.dev
-          CTRUE_UPDATE_FEED_URL: https://github.com/monishpatalay/ctrue/releases/latest/download/
+          CTRUE_API_URL: https://api.your-domain.com
+          VITE_API_URL: https://api.your-domain.com
+          CTRUE_WEBSITE_URL: https://your-domain.com
+          VITE_WEBSITE_URL: https://your-domain.com
+          CTRUE_UPDATE_FEED_URL: https://github.com/rutiknarute/ctrue/releases/latest/download/
       - uses: actions/upload-artifact@v4
         with:
           name: ctrue-windows-x64

@@ -18,7 +18,7 @@ test.afterEach(async ({ request }) => {
 
 test('the home page leads to the download and the workspace', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('h1')).toHaveText('Stay present.Think clearly.');
+  await expect(page.locator('h1')).toHaveText('Think clearly.');
   await page.keyboard.press('Tab');
   await expect(page.getByRole('link', { name: 'Skip to content' })).toBeFocused();
   await page.getByRole('link', { name: /Get Ctrue/ }).click();

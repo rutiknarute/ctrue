@@ -13,9 +13,9 @@ const desktop = 'apps/desktop', release = join(desktop, 'release'), app = join(r
 const version = JSON.parse(readFileSync(join(desktop, 'package.json'), 'utf8')).version;
 const expected = {
   cert: (process.env.CTRUE_SIGN_IDENTITY || 'CEEFE3EC7734E8C8DDA6293FBC4F6FE94709EC3F').toLowerCase(),
-  api: process.env.CTRUE_API_URL || 'https://api.ctrue.monishpatalay.dev',
-  website: process.env.CTRUE_WEBSITE_URL || 'https://ctrue.monishpatalay.dev',
-  feed: (process.env.CTRUE_UPDATE_FEED_URL || 'https://github.com/monishpatalay/ctrue/releases/latest/download/').replace(/\/?$/, '/'),
+  api: process.env.CTRUE_API_URL || 'https://api.your-domain.com',
+  website: process.env.CTRUE_WEBSITE_URL || 'https://your-domain.com',
+  feed: (process.env.CTRUE_UPDATE_FEED_URL || 'https://github.com/rutiknarute/ctrue/releases/latest/download/').replace(/\/?$/, '/'),
 };
 const failures = [];
 const check = (name, ok, detail = '') => { console.log(`${ok ? '✔' : '✖'} ${name}${!ok && detail ? ` — ${detail}` : ''}`); if (!ok) failures.push(name); };

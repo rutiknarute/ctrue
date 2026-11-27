@@ -1,6 +1,6 @@
 // Read-only checks against the live website and API: only GET, HEAD and CORS preflight requests, nothing is written.
-const API = process.env.CTRUE_API_URL || 'https://api.ctrue.monishpatalay.dev';
-const WEB = process.env.CTRUE_WEBSITE_URL || 'https://ctrue.monishpatalay.dev';
+const API = process.env.CTRUE_API_URL || 'https://api.your-domain.com';
+const WEB = process.env.CTRUE_WEBSITE_URL || 'https://your-domain.com';
 const failures = [];
 const check = (name, ok, detail = '') => { console.log(`${ok ? '✔' : '✖'} ${name}${!ok && detail ? ` — ${detail}` : ''}`); if (!ok) failures.push(name); };
 const get = (url, init = {}) => fetch(url, { redirect: 'manual', signal: AbortSignal.timeout(15000), ...init });
