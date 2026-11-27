@@ -46,6 +46,11 @@
     },
     "@neondatabase/auth-ui": {
       "zod": "4.6.7"
-    }
+    },
+    "better-auth": "1.7.28",
+    "test-exclude": {
+      "glob": "^14.0.6"
+    },
+    "minimatch@>=7.0.0 <=11.0.0": "^11.0.9"
   }
 }
